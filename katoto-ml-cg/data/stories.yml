@@ -2,29 +2,443 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: pagbati path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: pagbati
+  - action: utter_pagbati
 
-- story: sad path 1
+- story: kailangan_ko_ng_kausap path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: mga_problema
+  - action: utter_mga_problema
 
-- story: sad path 2
+#pinansyal
+- story: pinansyal path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: pinansyal
+  - action: utter_pinansyal
+
+- story: oo_pinansyal path
+  steps:
+  - intent: oo_pinansyal
+  - action: utter_oo_pinansyal
+
+- story: kaugnayan_pinansyal_pamilya path
+  steps:
+  - intent: kaugnayan_pinansyal_pamilya
+  - action: utter_kaugnayan_pinansyal_pamilya
+
+- story: advice_pagkasyahin_sweldo path
+  steps:
+  - intent: advice_pagkasyahin_sweldo
+  - action: utter_advice_pagkasyahin_sweldo
+
+- story: advice_pag-iipon path
+  steps:
+  - intent: advice_pag-iipon
+  - action: utter_advice_pag-iipon
+
+- story: advice_baon_eskwela path
+  steps:
+  - intent: advice_baon_eskwela
+  - action: utter_advice_baon_eskwela
+
+- story: dagdag_advice_baon_eskwela path
+  steps:
+  - intent: dagdag_advice_baon_eskwela
+  - action: utter_dagdag_advice_baon_eskwela
+
+- story: advice_malaking_gastos_pamilya path
+  steps:
+  - intent: advice_malaking_gastos_pamilya
+  - action: utter_advice_malaking_gastos_pamilya
+
+- story: dagdag_advice_malaking_gastos_pamilya path
+  steps:
+  - intent: dagdag_advice_malaking_gastos_pamilya
+  - action: utter_dagdag_advice_malaking_gastos_pamilya
+
+- story: advice_utang
+  steps:
+  - intent: advice_utang
+  - action: utter_advice_utang
+
+- story: advice_school_gastos
+  steps:
+  - intent: advice_school_gastos
+  - action: utter_advice_school_gastos
+
+- story: advice_baon_school
+  steps:
+  - intent: advice_baon_school
+  - action: utter_advice_baon_school
+
+- story: dagdag_advice_baon_school
+  steps:
+  - intent: dagdag_advice_baon_school
+  - action: utter_dagdag_advice_baon_school
+
+- story: advice_hati-hati_pera
+  steps:
+  - intent: advice_hati-hati_pera
+  - action: utter_advice_hati-hati_pera
+
+- story: dagdag_advice_hati-hati_pera
+  steps:
+  - intent: dagdag_advice_hati-hati_pera
+  - action: utter_dagdag_advice_hati-hati_pera
+
+#pag-ibig
+- story: pag_ibig path 
+  steps:
+  - intent: pag_ibig
+  - action: utter_pag_ibig
+
+- story: oo_pag_ibig path 
+  steps:
+  - intent: oo_pag_ibig
+  - action: utter_oo_pag_ibig
+
+- story: self_love path 
+  steps:
+  - intent: self_love
+  - action: utter_self_love
+
+- story: advice_hindi_matanggap_pagkakamali path 
+  steps:
+  - intent: advice_hindi_matanggap_pagkakamali
+  - action: utter_advice_hindi_matanggap_pagkakamali
+
+- story: advice_kulang_mali_sarili path
+  steps:
+  - intent: advice_kulang_mali_sarili
+  - action: utter_advice_kulang_mali_sarili
+
+- story: advice_walang_nagmamahal path
+  steps:
+  - intent: advice_walang_nagmamahal
+  - action: utter_advice_walang_nagmamahal
+
+- story: mahal_sa_buhay path
+  steps:
+  - intent: mahal_sa_buhay
+  - action: utter_mahal_sa_buhay
+
+- story: advice_hindi_pinapansin_kaibigan path
+  steps:
+  - intent: advice_hindi_pinapansin_kaibigan
+  - action: utter_advice_hindi_pinapansin_kaibigan
+
+- story: advice_hindi_mahal_magulang path
+  steps:
+  - intent: advice_hindi_mahal_magulang
+  - action: utter_advice_hindi_mahal_magulang
+
+- story: advice_walang_suporta path
+  steps:
+  - intent: advice_walang_suporta
+  - action: utter_advice_walang_suporta
+
+- story: nililigawan_crush path
+  steps:
+  - intent: nililigawan_crush
+  - action: utter_nililigawan_crush
+
+- story: advice_hindi_kinakausap_crush path
+  steps:
+  - intent: advice_hindi_kinakausap_crush
+  - action: utter_advice_hindi_kinakausap_crush
+
+- story: advice_hindi_niya_gusto_crush path
+  steps:
+  - intent: advice_hindi_niya_gusto_crush
+  - action: utter_advice_hindi_niya_gusto_crush
+
+#career
+- story: career path
+  steps:
+  - intent: career
+  - action: utter_career
+
+- story: oo_career path
+  steps:
+  - intent: oo_career
+  - action: utter_oo_career
+
+- story: undecided_path path
+  steps:
+  - intent: undecided_path
+  - action: utter_undecided_path
+
+- story: oo_experience path
+  steps:
+  - intent: oo_experience
+  - action: utter_oo_experience
+
+- story: advice_finance path
+  steps:
+  - intent: advice_finance
+  - action: utter_advice_finance
+
+- story: advice_engineering path
+  steps:
+  - intent: advice_engineering
+  - action: utter_advice_engineering
+
+- story: advice_healthcare path
+  steps:
+  - intent: advice_healthcare
+  - action: utter_advice_healthcare
+
+- story: advice_media path
+  steps:
+  - intent: advice_media
+  - action: utter_advice_media
+
+- story: advice_education path
+  steps:
+  - intent: advice_education
+  - action: utter_advice_education
+
+- story: hindi_experience path
+  steps:
+  - intent: hindi_experience
+  - action: utter_hindi_experience
+
+- story: advice_self_reflect path
+  steps:
+  - intent: advice_self_reflect
+  - action: utter_advice_self_reflect
+
+- story: gusto_magshift path
+  steps:
+  - intent: gusto_magshift
+  - action: utter_gusto_magshift
+
+- story: advice_explore_course path
+  steps:
+  - intent: advice_explore_course
+  - action: utter_advice_explore_course
+
+- story: nahihirapan_course path
+  steps:
+  - intent: nahihirapan_course
+  - action: utter_nahihirapan_course
+
+- story: advice_maraming_pagawa path
+  steps:
+  - intent: advice_maraming_pagawa
+  - action: utter_advice_maraming_pagawa
+
+- story: advice_mahigpit_kurso path
+  steps:
+  - intent: advice_mahigpit_kurso
+  - action: utter_advice_mahigpit_kurso
+
+- story: advice_handa_sa_bagay path
+  steps:
+  - intent: advice_handa_sa_bagay
+  - action: utter_advice_handa_sa_bagay
+
+- story: hindi_makasunod_turo path
+  steps:
+  - intent: hindi_makasunod_turo
+  - action: utter_hindi_makasunod_turo
+
+- story: advice_wala_pasok_utak path
+  steps:
+  - intent: advice_wala_pasok_utak
+  - action: utter_advice_wala_pasok_utak
+
+- story: advice_mabilis_magturo path
+  steps:
+  - intent: advice_mabilis_magturo
+  - action: utter_advice_mabilis_magturo
+
+- story: nagbago_interes path
+  steps:
+  - intent: nagbago_interes
+  - action: utter_nagbago_interes
+
+- story: hindi_nageenjoy path
+  steps:
+  - intent: hindi_nageenjoy
+  - action: utter_hindi_nageenjoy
+
+- story: oo_tugma_hindi_nageenjoy path
+  steps:
+  - intent: oo_tugma_hindi_nageenjoy
+  - action: utter_oo_tugma_hindi_nageenjoy
+
+- story: hindi_tugma_hindi_nageenjoy path
+  steps:
+  - intent: hindi_tugma_hindi_nageenjoy
+  - action: utter_hindi_tugma_hindi_nageenjoy
+
+- story: hindi_natanggap_ojt path
+  steps:
+  - intent: hindi_natanggap_ojt
+  - action: utter_hindi_natanggap_ojt
+
+- story: hindi_nakapagsanay path
+  steps:
+  - intent: hindi_nakapagsanay
+  - action: utter_hindi_nakapagsanay
+
+- story: advice_oo_mahiyain_hindi_nakapagsanay path
+  steps:
+  - intent: advice_oo_mahiyain_hindi_nakapagsanay
+  - action: utter_advice_oo_mahiyain_hindi_nakapagsanay
+
+- story: advice_hindi_mahiyain_hindi_nakapagsanay path
+  steps:
+  - intent: advice_oo_mahiyain_hindi_nakapagsanay
+  - action: utter_advice_oo_mahiyain_hindi_nakapagsanay
+
+- story: kulang_experience path
+  steps:
+  - intent: kulang_experience
+  - action: utter_kulang_experience
+
+- story: advice_maghanap_ojt path
+  steps:
+  - intent: advice_maghanap_ojt
+  - action: utter_advice_maghanap_ojt
+
+- story: advice_makukuha_trainee path
+  steps:
+  - intent: advice_makukuha_trainee
+  - action: utter_advice_makukuha_trainee
+
+- story: advice_kulang_kakilala path
+  steps:
+  - intent: advice_kulang_kakilala
+  - action: utter_advice_kulang_kakilala
+
+- story: advice_mayroon_online_kulang_kakilala path
+  steps:
+  - intent: advice_mayroon_online_kulang_kakilala
+  - action: utter_advice_mayroon_online_kulang_kakilala
+
+- story: advice_payo_pa_kulang_kakilala path
+  steps:
+  - intent: advice_payo_pa_kulang_kakilala
+  - action: utter_advice_payo_pa_kulang_kakilala
+
+#Pag-aaral
+- story: pag_aaral path
+  steps:
+  - intent: pag_aaral
+  - action: utter_pag_aaral
+
+- story: oo_pag_aaral path
+  steps:
+  - intent: oo_pag_aaral
+  - action: utter_oo_pag_aaral
+
+- story: oo_pag_aaral path
+  steps:
+  - intent: oo_pag_aaral
+  - action: utter_oo_pag_aaral
+
+- story: time_management_pag_aaral path
+  steps:
+  - intent: time_management_pag_aaral
+  - action: utter_time_management_pag_aaral
+
+- story: advice_sabay_sabay_gawain path
+  steps:
+  - intent: advice_sabay_sabay_gawain
+  - action: utter_advice_sabay_sabay_gawain
+
+- story: advice_hindi_alam_priority path
+  steps:
+  - intent: advice_hindi_alam_priority
+  - action: utter_advice_hindi_alam_priority
+
+- story: advice_hindi_sapat_oras path
+  steps:
+  - intent: advice_hindi_sapat_oras
+  - action: utter_advice_hindi_sapat_oras
+
+- story: hirap_makasabay_topic path
+  steps:
+  - intent: hirap_makasabay_topic
+  - action: utter_hirap_makasabay_topic
+
+- story: mahirap_subject path
+  steps:
+  - intent: mahirap_subject
+  - action: utter_mahirap_subject
+
+- story: advice_oo_mahirap_subject path
+  steps:
+  - intent: advice_oo_mahirap_subject
+  - action: utter_advice_oo_mahirap_subject
+
+- story: advice_hindi_mahirap_subject path
+  steps:
+  - intent: advice_hindi_mahirap_subject
+  - action: utter_advice_hindi_mahirap_subject
+
+- story: advice_hindi_maintindihan_turo path
+  steps:
+  - intent: advice_hindi_maintindihan_turo
+  - action: utter_advice_hindi_maintindihan_turo
+
+- story: advice_napagiwanan_sa_klase path
+  steps:
+  - intent: advice_napagiwanan_sa_klase
+  - action: utter_advice_napagiwanan_sa_klase
+
+- story: test_anxiety path
+  steps:
+  - intent: test_anxiety
+  - action: utter_test_anxiety
+
+- story: advice_kaba_quiz path
+  steps:
+  - intent: advice_kaba_quiz
+  - action: utter_advice_kaba_quiz
+
+- story: advice_takot_mababang_grade path
+  steps:
+  - intent: advice_takot_mababang_grade
+  - action: utter_advice_takot_mababang_grade
+
+- story: advice_hindi_pumasa path
+  steps:
+  - intent: advice_hindi_pumasa
+  - action: utter_advice_hindi_pumasa
+
+
+
+
+
+#naiintindihan
+
+- story: naiintindihan_yung_advice path
+  steps:
+  - intent: naiintindihan_yung_advice
+  - action: utter_naiintindihan_yung_advice
+
+- story: hindi_naiintindihan_yung_advice path
+  steps:
+  - intent: hindi_naiintindihan_yung_advice
+  - action: utter_hindi_naiintindihan_yung_advice
+
+- story: bigay_form path
+  steps:
+  - intent: bigay_form
+  - action: utter_bigay_form
+
+- story: ayaw_kumausap_counselor path
+  steps:
+  - intent: ayaw_kumausap_counselor
+  - action: utter_ayaw_kumausap_counselor
+
+- story: submit path
+  steps:
+  - intent: submit
+  - action: utter_submit
+

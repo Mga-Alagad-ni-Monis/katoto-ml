@@ -4,10 +4,14 @@ rules:
 
 - rule: Say goodbye anytime the user says goodbye
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: paalam
+  - action: utter_paalam
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+# - rule: magkasunod na utter joke
+#   steps:
+#   - intent: magbigay_joke
+#   - action: utter_magbigay_joke
+#   - action: utter_natawa_ka_ba
+#   - intent: isa_pang_joke
+#   - action: utter_magbigay_joke
+#   - action: utter_natawa_ka_ba

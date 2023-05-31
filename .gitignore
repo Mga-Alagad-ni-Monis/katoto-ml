@@ -1,0 +1,4 @@
+/katoto-ml-cg/models
+/katoto-ml-fc/models
+/katoto-ml-cg/.rasa/cache
+/katoto-ml-fc/.rasa/cache

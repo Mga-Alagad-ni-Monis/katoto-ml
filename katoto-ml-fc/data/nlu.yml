@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: pagbati
   examples: |
     - hey
     - hello
@@ -9,83 +9,130 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
+    - what u doin
+    - tol
+    - pre
     - hey there
-    - let's go
+    - warrup
+    - wazzup
+    - zup
+    - oy
+    - ey
+    - katoto
     - hey dude
     - goodmorning
     - goodevening
     - good afternoon
+    - magandang umaga
+    - magandang tanghali
+    - magandang gabi
+    - magandang araw
+    - magandang buhay
 
-- intent: goodbye
+- intent: magbigay_joke
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - magbigay ka nga ng joke
+    - joke naman
+    - biruin mo ko
+    - magjoke ka naman
+
+- intent: isa_pang_joke
+  examples: |
+    - isa pa
+    - isa pang joke
+    - more joke
+    - more joke please
+    - hahaha natawa naman, isa pa
+
+- intent: paalam
+  examples: |
+    - paalam
     - bye
+    - end na ng usapan
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 
-- intent: affirm
+- intent: ayaw_na_ng_joke
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - ayaw ko na
+    - ayaw ko na ng joke
+    - tama na
+    - ok na ko
 
-- intent: deny
+- intent: oo_natawa_ka_ba
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - oo naman
+    - nakakatuwa ka talaga
+    - hahaha
+    - ayos
 
-- intent: mood_great
+- intent: hindi_natawa_ka_ba
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - hindi e
+    - corny
+    - di na
+    - di nakakatawa
 
-- intent: mood_unhappy
+- intent: mga_mental_health_issue
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - ano-ano ba yung mga issues
+    - bigyan mo ko ng example
+    - halimbawa
+    - tipikal na nararanasan ng mga tao
 
-- intent: bot_challenge
+- intent: explain_mga_mental_health_issue
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - paexplain naman niyan lahat
+    - explain
+    - ano ano yan
+    - ano ba yang mga yan
+
+- intent: depression_meaning
+  examples: |
+    - ano ba yung depression
+    - ano depression
+    - alam mo yung depression
+    - what depression
+
+- intent: anxiety_meaning
+  examples: |
+    - ano ba yung anxiety
+    - ano anxiety
+    - alam mo yung anxiety
+    - what anxiety
+
+- intent: bipolar_meaning
+  examples: |
+    - ano ba yung bipolar
+    - ano bipolar
+    - alam mo yung bipolar
+    - what bipolar
+
+- intent: schizophrenia_meaning
+  examples: |
+    - ano ba yung schizophrenia
+    - ano schizophrenia
+    - alam mo yung schizophrenia
+    - what schizophrenia
+
+- intent: eating_disorder_meaning
+  examples: |
+    - ano ba yung eating_disorder
+    - ano eating_disorder
+    - alam mo yung eating_disorder
+    - what eating_disorder
+
+- intent: clinic_around_val
+  examples: |
+    - clinic around val
+    - offer mental health service
+    - malapit na clinic
+    - malapit na clinic sa valenzuela
+
+- intent: opening_hours_guidance
+  examples: |
+    - opening hours 
+    - anong oras bukas ang plv guidance
+    - bukas ba kayo ng umaga
+    - bukas ba kayo ng hapon
+
+

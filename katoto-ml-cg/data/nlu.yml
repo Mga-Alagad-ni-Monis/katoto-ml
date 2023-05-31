@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: pagbati
   examples: |
     - hey
     - hello
@@ -17,75 +17,371 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
+- intent: mga_problema
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Kailangan ko ng kausap
+    - May pa kong gustong ilapit
 
-- intent: affirm
+#pinansyal
+- intent: pinansyal
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Pinansyal
 
-- intent: deny
+- intent: oo_pinansyal
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Oo, gusto kong ikuwento ito
 
-- intent: mood_great
+- intent: kaugnayan_pinansyal_pamilya
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - May kaugnayan ito sa estadong pinansyal ng aming pamilya.
 
-- intent: mood_unhappy
+- intent: advice_pagkasyahin_sweldo
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - Katoto, nahihirapan ang aming pamilya na pagkasyahin ang sweldo.
 
-- intent: bot_challenge
+- intent: advice_pag-iipon
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Maaari mo ba akong matulungan sa pag-iipon?
+
+- intent: advice_baon_eskwela
+  examples: |
+    - Hindi sumasapat ang aking baon sa eskwela
+
+- intent: dagdag_advice_baon_eskwela
+  examples: |
+    - Kailangan ko pa ng karagdagang tips
+
+- intent: advice_malaking_gastos_pamilya
+  examples: |
+    - May biglaang malaking gastos ang aming pamilya at nahihirapan ako
+
+- intent: dagdag_advice_malaking_gastos_pamilya
+  examples: |
+    - Kailangan ko pa ng karagdagang payo
+
+- intent: dagdag_advice_malaking_gastos_pamilya
+  examples: |
+    - Kailangan ko pa ng karagdagang payo
+
+- intent: advice_utang
+  examples: |
+    - Ang dami ko nang utang at nahihirapan na ako
+
+- intent: advice_school_gastos
+  examples: |
+    - Dahil sa dami ng gastusin sa school
+
+- intent: advice_baon_school
+  examples: |
+    - Dahil sa hindi sapat ang aking baon sa eskwelahan
+
+- intent: dagdag_advice_baon_school
+  examples: |
+    - Maaari pa ba akong manghingi pa ng payo
+
+- intent: advice_hati-hati_pera
+  examples: |
+    - Sobrang nababagabag ako dahil hindi maayos ang paghahati-hati ng aking pera
+
+- intent: dagdag_advice_hati-hati_pera
+  examples: |
+    - Karagdagang payo pa
+
+#pag-ibig
+- intent: pag_ibig
+  examples: |
+    - Pag-ibig
+
+- intent: oo_pag_ibig
+  examples: |
+    - Oo, gusto kong ikuwento ito
+
+- intent: self_love
+  examples: |
+    - Tungkol ito sa self-love
+
+- intent: advice_hindi_matanggap_pagkakamali
+  examples: |
+    - Hindi ko matanggap yung mga pagkakamali ko
+
+- intent: advice_kulang_mali_sarili
+  examples: |
+    - Ang dami ko nakikitang kulang at mali sa sarili ko
+
+- intent: advice_walang_nagmamahal
+  examples: |
+    - Wala nagmamahal sa akin kaya hindi ko magawang mahalin ang sarili ko
+
+- intent: mahal_sa_buhay
+  examples: |
+    - Tungkol ito sa mga mahal sa buhay
+
+- intent: advice_hindi_pinapansin_kaibigan
+  examples: |
+    - Hindi ako pinapansin ng aking kaibigan
+
+- intent: advice_hindi_mahal_magulang
+  examples: |
+    - Hindi na ba ako mahal ng aking mga magulang?
+
+- intent: advice_walang_suporta
+  examples: |
+    - Walang gusto na sumuporta sa akin
+
+- intent: nililigawan_crush
+  examples: |
+    - Tungkol ito sa nililigawan
+
+- intent: advice_hindi_kinakausap_crush
+  examples: |
+    - Hindi na ako kinakausap
+
+- intent: advice_hindi_niya_gusto_crush
+  examples: |
+    - Hindi niya ako gusto
+
+- intent: advice_iniiwasan_crush
+  examples: |
+    - Iniiwasan niya ako
+
+#career
+- intent: career
+  examples: |
+    - Career
+
+- intent: oo_career
+  examples: |
+    - Oo, gusto kong pag-usapan ang career
+
+- intent: undecided_path
+  examples: |
+    - Hindi ako makapagdecide sa path
+
+- intent: oo_experience
+  examples: |
+    - Oo, may mga nasubukan na
+
+- intent: advice_finance
+  examples: |
+    - Finance/Marketing
+
+- intent: advice_engineering
+  examples: |
+    - Engineering/IT
+
+- intent: advice_healthcare
+  examples: |
+    - Healthcare/Medicine
+
+- intent: advice_media
+  examples: |
+    - Media/Entertainment
+
+- intent: advice_education
+  examples: |
+    - Education
+
+- intent: hindi_experience
+  examples: |
+    - Wala pa sa ngayon
+
+- intent: advice_self_reflect
+  examples: |
+    - Paano ba mag-self reflect?
+
+- intent: gusto_magshift
+  examples: |
+    - Gusto ko mag-shift sa ibang kurso
+
+- intent: advice_explore_course
+  examples: |
+    - Nag-eexplore ako ng ibang course
+
+- intent: nahihirapan_course
+  examples: |
+    - Nahihirapan ako sa current course na tine-take ko
+
+- intent: advice_maraming_pagawa
+  examples: |
+    - Maraming pinapagawa
+
+- intent: advice_mahigpit_kurso
+  examples: |
+    - Mahigpit sa kurso namin eh
+
+- intent: advice_handa_sa_bagay
+  examples: |
+    - Paano ba maging handa sa mga ganiyang bagay
+
+- intent: hindi_makasunod_turo
+  examples: |
+    - Hindi na ko makasunod sa mga tinuturo sa amin
+
+- intent: advice_wala_pasok_utak
+  examples: |
+    - Wala na pumapasok sa aking utak
+
+- intent: advice_mabilis_magturo
+  examples: |
+    - Mabilis magturo ang aming guro
+
+- intent: nagbago_interes
+  examples: |
+    - Nagbago ang interes ko sa buhay
+
+- intent: hindi_nageenjoy
+  examples: |
+    - Hindi na ko nag-eenjoy eh.
+
+- intent: oo_tugma_hindi_nageenjoy
+  examples: |
+    - Oo, tugma naman
+
+- intent: hindi_tugma_hindi_nageenjoy
+  examples: |
+    - Oo, tugma naman
+
+- intent: advice_walang_growth
+  examples: |
+    - Wala na akong growth sa career na tinatahak ko
+
+- intent: hindi_natanggap_ojt
+  examples: |
+    - Hindi ako natanggap as OJT trainee
+
+- intent: hindi_nakapagsanay
+  examples: |
+    - Hindi nakapagsanay
+
+- intent: advice_oo_mahiyain_hindi_nakapagsanay
+  examples: |
+    - Oo e, mahiyain ako
+
+- intent: advice_hindi_mahiyain_hindi_nakapagsanay
+  examples: |
+    - Hindi ako mahiyain
+
+- intent: kulang_experience
+  examples: |
+    - Kulang ng required experience
+
+- intent: advice_maghanap_ojt
+  examples: |
+    - Sige, susubukan ko maghanap
+
+- intent: advice_makukuha_trainee
+  examples: |
+    - Makukuha kaya ako as trainee kung wala akong skills
+
+- intent: advice_kulang_kakilala
+  examples: |
+    - Kakulangan ng mga kakilala
+
+- intent: advice_mayroon_online_kulang_kakilala
+  examples: |
+    - Mayroon ba nito sa online
+
+- intent: advice_payo_pa_kulang_kakilala
+  examples: |
+    - Pahingi pa ng payo
+
+#academic
+- intent: pag_aaral
+  examples: |
+    - Pag-aaral
+
+- intent: oo_pag_aaral
+  examples: |
+    - Oo, gusto kong pag-usapan ang pag-aaral
+
+- intent: time_management_pag_aaral
+  examples: |
+    - Time management sa pag-aaral
+
+- intent: advice_sabay_sabay_gawain
+  examples: |
+    - Madalas akong mapagod kapag sabay-sabay ang mga gawain
+
+- intent: advice_hindi_alam_priority
+  examples: |
+    - Hindi alam ang priority
+
+- intent: advice_hindi_sapat_oras
+  examples: |
+    - Hindi sapat ang oras eh
+
+- intent: hirap_makasabay_topic
+  examples: |
+    - Nahihirapan makasunod sa topic
+
+- intent: mahirap_subject
+  examples: |
+    - Mahirap yung subject eh
+
+- intent: advice_oo_mahirap_subject
+  examples: |
+    - Oo eh, mahirap yung subject
+
+- intent: advice_hindi_mahirap_subject
+  examples: |
+    - Hindi naman mahirap
+
+- intent: advice_hindi_maintindihan_turo
+  examples: |
+    - Hindi ko maintindihan yung tinuturo
+
+- intent: advice_napagiwanan_sa_klase
+  examples: |
+    - Napag-iwanan na ko sa klase
+
+- intent: test_anxiety
+  examples: |
+    - Test Anxiety
+
+- intent: advice_kaba_quiz
+  examples: |
+    - Natatakot ako kapag may quiz
+
+- intent: advice_takot_mababang_grade
+  examples: |
+    - Nakakatakot ang mababang grade
+
+- intent: advice_hindi_pumasa
+  examples: |
+    - Baka hindi ako pumasa
+
+
+#naintindihan yung advice
+- intent: naiintindihan_yung_advice
+  examples: |
+    - Susubukan namin ito. Salamat!
+    - Ganoon ba? Susubukan ko ito, Katoto!
+    - Naiintindihan ko. sa tingin ko ay sapat na ito. Salamat!
+    - Maraming salamat, Katoto! Sapat na ito.
+    - Maraming Salamat, Ito ay lubos na makatutulong sa akin.
+    - Susundin ko ang mga ito!
+    - Nauunawan ko naman, Salamat!
+    - Naiintindihan ko na!
+    - Noted, salamat!
+
+- intent: hindi_naiintindihan_yung_advice
+  examples: |
+    - Sa tingin ko ay hindi pa sapat ang mga ito para makatulong
+    - Sa tingin ko hindi pa rin sapat ang payo na ito.
+    - Hindi sapat 'yung payo
+    - Hindi pa rin sapat
+    - Wala sa pagpipilian
+
+- intent: ayaw_kumausap_counselor
+  examples: |
+    - Hindi, ayaw ko, Katoto.
+    - Ayaw ko, Katoto
+
+- intent: bigay_form
+  examples: |
+    - Oo, katoto gusto kong kumausap ng guidance counselor.
+
+- intent: submit
+  examples: |
+    - Submit
+

@@ -2,29 +2,96 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: pagbati path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: pagbati
+  - action: utter_pagbati
 
-- story: sad path 1
+- story: magbigay_joke path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: magbigay_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+  - intent: isa_pang_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+  - intent: ayaw_na_ng_joke
+  - action: utter_ayaw_na_ng_joke
 
-- story: sad path 2
+- story: isa_pang_joke path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: isa_pang_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+  - intent: ayaw_na_ng_joke
+  - action: utter_ayaw_na_ng_joke
+
+- story: oo_nakakatawa_joke path
+  steps:
+  - intent: isa_pang_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+  - intent: oo_natawa_ka_ba
+  - action: utter_oo_natawa_ka_ba
+  - intent: isa_pang_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+
+- story: hindi_nakakatawa_joke path
+  steps:
+  - intent: isa_pang_joke
+  - action: utter_magbigay_joke
+  - action: utter_natawa_ka_ba
+  - intent: oo_natawa_ka_ba
+  - action: utter_oo_natawa_ka_ba
+  - intent: ayaw_na_ng_joke
+  - action: utter_ayaw_na_ng_joke
+
+- story: mental_health_issues path
+  steps:
+  - intent: mga_mental_health_issue
+  - action: utter_mga_mental_health_issue
+  - intent: explain_mga_mental_health_issue
+  - action: utter_explain_mga_mental_health_issue
+
+- story: explain_mga_mental_health_issue path
+  steps:
+  - intent: explain_mga_mental_health_issue
+  - action: utter_explain_mga_mental_health_issue
+
+- story: depression_meaning path
+  steps:
+  - intent: depression_meaning
+  - action: utter_depression_meaning
+
+- story: anxiety_meaning path
+  steps:
+  - intent: anxiety_meaning
+  - action: utter_anxiety_meaning
+
+- story: bipolar_meaning path
+  steps:
+  - intent: bipolar_meaning
+  - action: utter_bipolar_meaning
+
+- story: schizophrenia_meaning path
+  steps:
+  - intent: schizophrenia_meaning
+  - action: utter_schizophrenia_meaning
+
+- story: eating_disorder_meaning path
+  steps:
+  - intent: eating_disorder_meaning
+  - action: utter_eating_disorder_meaning
+
+- story: clinic_around_val path
+  steps:
+  - intent: clinic_around_val
+  - action: utter_clinic_around_val
+
+- story: opening_hours_guidance path
+  steps:
+  - intent: opening_hours_guidance
+  - action: utter_opening_hours_guidance
+
+
