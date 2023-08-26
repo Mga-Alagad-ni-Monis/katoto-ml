@@ -1,5 +1,4 @@
-version: "3.1"
-
+version: '3.1'
 intents:
   - pagbati
   - magbigay_joke
@@ -17,7 +16,6 @@ intents:
   - eating_disorder_meaning
   - clinic_around_val
   - opening_hours_guidance
-
 actions:
   - utter_pagbati
   - utter_magbigay_joke
@@ -34,74 +32,91 @@ actions:
   - utter_eating_disorder_meaning
   - utter_clinic_around_val
   - utter_opening_hours_guidance
-
 responses:
   utter_pagbati:
-  - text: "Kumusta? ako si Katoto! Lagi mong maaasahan, nandito ako para makausap mo!"
-  - text: "Magandang Araw, ako ito si Katoto, handa akong makipag-usap sa iyo!"
-
+    - text: Kumusta? ako si Katoto! Lagi mong maaasahan, nandito ako para makausap mo!
+    - text: Magandang Araw, ako ito si Katoto, handa akong makipag-usap sa iyo!
   utter_magbigay_joke:
-  - text: "Anong tawag sa baboy na nag-gym? Edi, Pork-ercise!"
-  - text: "Bakit hindi tinatanggap ng mga ibon ang utang? Kasi ang ibon, 'bayad muna, bago lumipad!'"
-  - text: "Ano ang paboritong meryenda ng mga kalendaryo? Edi, Dates!"
-  - text: "Ano ang sabi ng baby corn sa mama corn? 'Ma, baby corn na ako!'"
-  - text: "Bakit malungkot ang kalendaryo? Kasi laging napapasa-'tanggal'!"
-  - text: "Anong sinasabi ng upuan sa taong bumabangga? 'Nahulog ka, eh silya ka!'"
-  - text: "Ano ang tawag sa bulag na chef? Edi, Wala siyang 'eye-dea'!"
-  - text: "Ano ang tawag sa tindera ng karayom? Edi, Need-le Seller!"
-  - text: "Bakit hindi sumasama ang mga insekto sa party? Kasi may 'anti-bug' spray!"
-  - text: "Ano ang tawag sa maliit na pizza? Edi, Pizzang-bisaya!"
-
+    - text: Anong tawag sa baboy na nag-gym? Edi, Pork-ercise!
+    - text: Bakit hindi tinatanggap ng mga ibon ang utang? Kasi ang ibon, 'bayad muna, bago lumipad!'
+    - text: Ano ang paboritong meryenda ng mga kalendaryo? Edi, Dates!
+    - text: Ano ang sabi ng baby corn sa mama corn? 'Ma, baby corn na ako!'
+    - text: Bakit malungkot ang kalendaryo? Kasi laging napapasa-'tanggal'!
+    - text: Anong sinasabi ng upuan sa taong bumabangga? 'Nahulog ka, eh silya ka!'
+    - text: Ano ang tawag sa bulag na chef? Edi, Wala siyang 'eye-dea'!
+    - text: Ano ang tawag sa tindera ng karayom? Edi, Need-le Seller!
+    - text: Bakit hindi sumasama ang mga insekto sa party? Kasi may 'anti-bug' spray!
+    - text: Ano ang tawag sa maliit na pizza? Edi, Pizzang-bisaya!
   utter_paalam:
-  - text: "Paalam na aking kaibigan, sa susunod ulit!"
-  - text: "Ugaliing alagaan ang isipan! Paalam!"
-  - text: "Nandito lang ako, handang kumausap. Paalam!"
-
+    - text: Paalam na aking kaibigan, sa susunod ulit!
+    - text: Ugaliing alagaan ang isipan! Paalam!
+    - text: Nandito lang ako, handang kumausap. Paalam!
   utter_natawa_ka_ba:
-  - text: "Natawa ka ba? Hahaha"
-  - text: "Nakakatawa ba?"
-  - text: "Hmmm... parang hindi ka naman natawa? Hehehe"
-  - text: "Hahaha eme"
-
+    - text: Natawa ka ba? Hahaha
+    - text: Nakakatawa ba?
+    - text: Hmmm... parang hindi ka naman natawa? Hehehe
+    - text: Hahaha eme
   utter_oo_natawa_ka_ba:
-  - text: "Gusto mo pa ba ng isa? Hahaha"
-  - text: "'Yun ohh, natuwa naman pala"
-
+    - text: Gusto mo pa ba ng isa? Hahaha
+    - text: '''Yun ohh, natuwa naman pala'
   utter_ayaw_na_ng_joke:
-  - text: "Sige sabihin mo lang kapag gusto mo pa ng jokes! Hahaha"
-  - text: "Sayang naman marami pa naman akong baon."
-  - text: "Uhmmm, mukhang natuwa ka naman e 'no? Hehehe"
-
+    - text: Sige sabihin mo lang kapag gusto mo pa ng jokes! Hahaha
+    - text: Sayang naman marami pa naman akong baon.
+    - text: Uhmmm, mukhang natuwa ka naman e 'no? Hehehe
   utter_mga_mental_health_issue:
-  - text: "Kadalasan ng mga nararanasang isyu sa mental health ng mga tao ay ang mga sumusunod: \n1. Depression \n2. Anxiety \n3. Bipolar Disorder \n4. Schizophrenia \n5. Eating Disorders"
-  - text: "Ito ang mga kadalasang mental health issue nararanasan: \n1. Depression \n2. Anxiety \n3. Bipolar Disorder \n4. Schizophrenia \n5. Eating Disorders"
-
+    - text: |-
+        Kadalasan ng mga nararanasang isyu sa mental health ng mga tao ay ang mga sumusunod: 
+        1. Depression 
+        2. Anxiety 
+        3. Bipolar Disorder 
+        4. Schizophrenia 
+        5. Eating Disorders
+    - text: |-
+        Ito ang mga kadalasang mental health issue nararanasan: 
+        1. Depression 
+        2. Anxiety 
+        3. Bipolar Disorder 
+        4. Schizophrenia 
+        5. Eating Disorders
   utter_explain_mga_mental_health_issue:
-  - text: "Kadalasan ng mga nararanasang isyu sa mental health ng mga tao ay ang mga sumusunod: \n1. Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay. \n2. Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack. \n3. Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon. \n4. Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip.\n5. Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang."
-  - text: "Ito ang mga kadalasang mental health issue nararanasan: \n1. Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay. \n2. Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack. \n3. Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon. \n4. Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip.\n5. Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang."
-
+    - text: |-
+        Kadalasan ng mga nararanasang isyu sa mental health ng mga tao ay ang mga sumusunod: 
+        1. Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay. 
+        2. Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack. 
+        3. Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon. 
+        4. Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip.
+        5. Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang.
+    - text: |-
+        Ito ang mga kadalasang mental health issue nararanasan: 
+        1. Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay. 
+        2. Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack. 
+        3. Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon. 
+        4. Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip.
+        5. Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang.
   utter_depression_meaning:
-  - text: "Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay."
-
+    - text: Depression - Ang depression ay isang malalim at pangmatagalang pagkalungkot na maaaring makaapekto sa mga pang-araw-araw na gawain at pagkakaroon ng positibong pananaw sa buhay. Maaaring may mga sintomas tulad ng pagkawala ng interes sa mga dating paboritong aktibidad, kawalan ng enerhiya, pagbabago sa timbang, pagkabahala, at pag-iisip ng pagpapakamatay.
   utter_anxiety_meaning:
-  - text: "Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack."
-  
+    - text: Anxiety - Ang anxiety ay isang malubhang pakiramdam ng kabalisaan, nerbiyos, o takot na maaring makaapekto sa pang-araw-araw na pag-andar. Ito ay maaaring sumama habang nagmumuni-muni, nakakaramdam ng sobrang pag-aalala, at maaaring may mga pangyayari ng pagkakaroon ng panic attack.
   utter_bipolar_meaning:
-  - text: "Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon."
-
+    - text: Bipolar Disorder - Ang bipolar disorder ay isang kondisyon na kung saan nagkakaroon ang isang indibidwal ng mga pagbabago sa mood na mula sa matinding kalungkutan o depression hanggang sa malabis na pagkakasigla o mania. Ang mga taong may bipolar disorder ay maaaring makaranas ng mga pagbabago ng mood na labis na nakakaapekto sa kanilang pag-aaral, trabaho, at mga personal na relasyon.
   utter_schizophrenia_meaning:
-  - text: "Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip."
-
+    - text: Schizophrenia - Ang schizophrenia ay isang malubhang sakit sa pag-iisip na maaaring makaapekto sa pag-iisip, pakikipag-ugnayan sa ibang tao, at kahusayan sa pang-araw-araw na gawain. Ang mga taong may schizophrenia ay maaaring magkaroon ng mga delusyon, hallucinations, pagkawala ng interes, at problema sa pag-iisip.
   utter_eating_disorder_meaning:
-  - text: "Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang. \n2. SMLC Behavioral Therapy Inc. (MacArthur Hwy, Valenzuela, 1440 Metro Manila) \n3. "
-
+    - text: |-
+        Eating Disorders - Ito ay mga karamdamang kaugnay ng pagkain tulad ng anorexia nervosa, bulimia nervosa, at binge eating disorder. Ang mga taong may mga eating disorder ay may mga hindi pangkaraniwang relasyon sa pagkain, tulad ng labis na pagkain, kawalan ng kontrol sa pagkain, o sobrang pagkaalam sa timbang. 
+        2. SMLC Behavioral Therapy Inc. (MacArthur Hwy, Valenzuela, 1440 Metro Manila) 
+        3. 
   utter_clinic_around_val:
-  - text: "Ito ang mga clinic na nagbibigay ng mental health services na malapit sa mga PLVians: \n1. Psyche Solution Psychological Services-Valenzuela (249 unit, 7 Maysan Rd, Valenzuela, Metro Manila) \n2. Tumbocon Polycare (95 Marcelo H. Del Pilar St, Malabon, 1475 Metro Manila) \n3. Inner Core Therapeutic Clinic (441 Quirino Hwy, Novaliches, Quezon City, 1123 Metro Manila) \n4. AGR Psychological Services (36 8th Street, corner 10th Ave, East Grace Park, Caloocan, Metro Manila) \n5. Wikipsych (Wikipsych)"
-
+    - text: |-
+        Ito ang mga clinic na nagbibigay ng mental health services na malapit sa mga PLVians: 
+        1. Psyche Solution Psychological Services-Valenzuela (249 unit, 7 Maysan Rd, Valenzuela, Metro Manila) 
+        2. Tumbocon Polycare (95 Marcelo H. Del Pilar St, Malabon, 1475 Metro Manila) 
+        3. Inner Core Therapeutic Clinic (441 Quirino Hwy, Novaliches, Quezon City, 1123 Metro Manila) 
+        4. AGR Psychological Services (36 8th Street, corner 10th Ave, East Grace Park, Caloocan, Metro Manila) 
+        5. Wikipsych (Wikipsych)
   utter_opening_hours_guidance:
-  - text: "Ang oras na bukas ang PLV Guidance Counselling Center ay mula 8 AM to 3 PM"
-  - text: "Magandang araw kaibigan, bukas ang PLV Guidance Counselling Center mula 8 AM to 3 PM"
-
+    - text: Ang oras na bukas ang PLV Guidance Counselling Center ay mula 8 AM to 3 PM
+    - text: Magandang araw kaibigan, bukas ang PLV Guidance Counselling Center mula 8 AM to 3 PM
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
